@@ -183,13 +183,19 @@ Répéter les étapes 5.1 à 5.3 pour Bob :
 
 ### 6.1 Structure des fichiers
 
+[Cliquez ici pour voir les fichiers de l'app web](./webapp/)
+
 ```
-TP-4/
+Doc-Keycloak/
+├── README.md
+├── Doc.md
 ├── docker-compose.yml
-├── webapp/
-│   ├── index.html
-│   ├── app.js
-│   └── server.py
+├── img/
+│   └── (screenshots)
+└── webapp/    <---------------------- Dossier de l'app web
+    ├── index.html
+    ├── app.js
+    └── server.py
 ```
 
 ### 6.2 Code source des fichiers
