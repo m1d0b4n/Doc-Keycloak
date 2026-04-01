@@ -13,16 +13,24 @@
 
 ---
 
-## 1. Installation de Keycloak avec Docker
+## 0. Préparation
 
-### 1.1 Créer le fichier docker-compose.yml
+### 0.1 Cloner le projet
 
 ```bash
-cd ~/Bureau/cours-crypto/TP-4
-nano docker-compose.yml
+git clone <url-du-repo>
+cd Doc-Keycloak
 ```
 
-Contenu du fichier :
+Tous les fichiers nécessaires sont déjà présents dans le dépôt.
+
+---
+
+## 1. Installation de Keycloak avec Docker
+
+### 1.1 Fichier docker-compose.yml
+
+Le fichier `docker-compose.yml` est déjà présent à la racine du projet avec le contenu suivant :
 
 ```yaml
 services:
@@ -39,6 +47,8 @@ services:
 ```
 
 ### 1.2 Démarrer Keycloak
+
+Depuis la racine du projet :
 
 ```bash
 docker-compose up -d
@@ -209,7 +219,7 @@ Doc-Keycloak/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP Keycloak - Application de test</title>
+    <title>Keycloak - Application de test</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -496,8 +506,10 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
 
 ### 6.3 Démarrer le serveur web
 
+Depuis la racine du projet, accéder au dossier webapp :
+
 ```bash
-cd ~/Bureau/cours-crypto/TP-4/webapp
+cd webapp
 python3 server.py
 ```
 
@@ -597,8 +609,9 @@ Ctrl+C
 
 ### 10.2 Arrêter Keycloak
 
+Depuis la racine du projet :
+
 ```bash
-cd ~/Bureau/cours-crypto/TP-4
 docker-compose down
 ```
 
