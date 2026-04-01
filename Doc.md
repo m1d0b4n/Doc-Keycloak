@@ -18,7 +18,7 @@
 ### 0.1 Cloner le projet
 
 ```bash
-git clone <url-du-repo>
+git clone https://github.com/m1d0b4n/Doc-Keycloak.git
 cd Doc-Keycloak
 ```
 
